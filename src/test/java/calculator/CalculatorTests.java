@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
+// It is the test class of Calculator
 class CalculatorTests {
 
     public Calculator calculator;
@@ -26,7 +27,7 @@ class CalculatorTests {
 
     // 4*6 should give us 24 and 2*3 should give us 6
     @Test
-    public void should_multiply_correctly_as_it_contains_multiple_asserts() {
+    public void multiplicationTest() {
         int firstAnswer = calculator.multiplication(4,6);
         int secondAnswer = calculator.multiplication(2,3);
         assertThat(firstAnswer).isEqualTo(24);
